@@ -1,0 +1,44 @@
+/*
+ * com_lithiumhead_jni_HelloWorld.c
+ *
+ *  Created on: 22/03/2014
+ *      Author: Sergio
+ */
+
+#include <jni.h>
+#include "..\01Java_HelloWorld\bin\com_lithiumhead_jni_HelloWorld.h"
+#include <stdio.h>
+JNIEXPORT void JNICALL Java_com_lithiumhead_jni_HelloWorld_sayHello(JNIEnv *env, jobject obj)
+{
+	printf("Hello world!\n");
+	return;
+}
+
+JNIEXPORT jdouble JNICALL Java_com_lithiumhead_jni_HelloWorld_add(JNIEnv *env, jobject obj, jdouble arg1, jdouble arg2)
+{
+	jdouble result = (jdouble) arg1 + arg2;
+	printf("Hello add, result is %d!\n", result);
+	return result;
+}
+/*
+JNIEXPORT jdouble JNICALL Java_com_lithiumhead_jni_HelloWorld_minus(JNIEnv *env, jobject obj, jdouble arg1, jdouble arg2)
+{
+	jdouble result = arg1 - arg2;
+	printf("Hello minus, result is %d!\n", result);
+	return result;
+}
+
+JNIEXPORT jdouble JNICALL Java_com_lithiumhead_jni_HelloWorld_mult(JNIEnv *env, jobject obj, jdouble arg1, jdouble arg2)
+{
+	jdouble result = arg1 * arg2;
+	printf("Hello mult, result is %d!\n", result);
+	return result;
+}
+
+JNIEXPORT jdouble JNICALL Java_com_lithiumhead_jni_HelloWorld_div(JNIEnv *env, jobject obj, jdouble arg1, jdouble arg2)
+{
+	jdouble result = arg1 / arg2;
+	printf("Hello div, result is %d!\n", result);
+	return result;
+}
+*/

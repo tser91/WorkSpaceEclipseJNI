@@ -1,0 +1,26 @@
+package com.lithiumhead.jni;
+
+class HelloWorld {
+	public native void sayHello();
+	
+	public native void add(double firstArg, double secondArg);
+	
+	public native void minus(double firstArg, double secondArg);
+	
+	public native void mult(double firstArg, double secondArg);
+	
+	public native void div(double firstArg, double secondArg);
+
+	static {
+		System.loadLibrary("HelloWorld");
+	}
+
+	public static void main(String[] args) {
+		HelloWorld h = new HelloWorld();
+		h.sayHello();
+		h.add(4,6);
+		h.minus(5, 3);
+		h.mult(3, 3);
+		h.div(10, 2);
+	}
+}

@@ -1,0 +1,6 @@
+11:20:54 **** Incremental Build of configuration Release for project 01C_HelloWorld ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Program Files\\Java\\jdk1.8.0\\include" "-IC:\\Program Files\\Java\\jdk1.8.0\\include\\win32" -O3 -Wall -c -fmessage-length=0 -o com_lithiumhead_jni_HelloWorld.o "..\\com_lithiumhead_jni_HelloWorld.c" 
+gcc -Wl,--add-stdcall-alias -shared -o HelloWorld.dll com_lithiumhead_jni_HelloWorld.o 
+Info: Nothing to build for 01C_HelloWorld
+Info: Nothing to build for 01C_HelloWorld

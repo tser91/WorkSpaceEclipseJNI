@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/01Java_HelloWorld/src/com/lithiumhead/jni/Calculator.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="com.lithiumhead.jni.Calculator"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="01Java_HelloWorld"/>
+</launchConfiguration>

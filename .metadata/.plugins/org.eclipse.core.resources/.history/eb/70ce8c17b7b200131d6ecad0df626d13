@@ -1,0 +1,24 @@
+package com.lithiumhead.jni;
+
+class HelloWorld {
+	
+	public native double add(double firstArg, double secondArg);
+	
+	public native double minus(double firstArg, double secondArg);
+	
+	public native double mult(double firstArg, double secondArg);
+	
+	public native double div(double firstArg, double secondArg);
+
+	static {
+		System.loadLibrary("HelloWorld");
+	}
+
+	/*public static void main(String[] args) {
+		HelloWorld h = new HelloWorld();
+		System.out.println("Add Result is " + h.add(4,6));
+		System.out.println("Minus Result is " + h.minus(5, 3));
+		System.out.println("Mult Result is " + h.mult(3, 3));
+		System.out.println("Div Result is " + h.div(10, 2));
+	}*/
+}

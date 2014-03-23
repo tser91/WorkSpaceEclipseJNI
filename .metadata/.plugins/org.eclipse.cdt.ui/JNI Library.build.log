@@ -1,0 +1,9 @@
+16:59:32 **** Incremental Build of configuration Debug for project JNI Library ****
+Info: Internal Builder is used for build
+g++ -Wl,--add-stdcall-alias -static-libgcc -static-libstdc++ -shared -o "libJNI Library.dll" "src\\JNITest.o" 
+xcopy "libJNI Library.dll" "C:\\Users\\Sergio\\WorkSpaceEclipseJNI\\JNI Test\\resources" /Y 
+C:libJNI Library.dll
+1 archivo(s) copiado(s)
+
+16:59:32 Build Finished (took 648ms)
+

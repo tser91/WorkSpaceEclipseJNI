@@ -1,0 +1,16 @@
+package com.lithiumhead.jni;
+
+class HelloWorld {
+	public native void sayHello();
+	
+	public native void sayHi();
+
+	static {
+		System.loadLibrary("HelloWorld");
+	}
+
+	public static void main(String[] args) {
+		HelloWorld h = new HelloWorld();
+		h.sayHi();
+	}
+}
